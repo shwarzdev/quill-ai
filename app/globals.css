@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand: 168 85 247;         /* purple-500 */
+  --brand-dark: 126 34 206;    /* purple-700 */
+  --background: 250 245 255;   /* faf5ff */
+  --foreground: 15 10 25;
+  --card: 255 255 255;
+  --card-foreground: 15 10 25;
+  --muted: 243 232 255;        /* purple-100 */
+  --muted-foreground: 107 33 168; /* purple-800 */
+  --border: 233 213 255;       /* purple-200 */
+  --ring: 168 85 247;
+}
+
+* {
+  box-sizing: border-box;
+  border-color: rgb(var(--border));
+}
+
+body {
+  background-color: rgb(var(--background));
+  color: rgb(var(--foreground));
+}
+
+/* nice scrollbar for the editor */
+.quill-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.quill-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.quill-scroll::-webkit-scrollbar-thumb {
+  background-color: rgb(var(--border));
+  border-radius: 9999px;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
