@@ -1,5 +1,7 @@
 # Quill AI
 
+![Screenshot](screenshot.png)
+
 AI writing assistant SaaS. Sign up, create documents, use AI to improve, continue, summarize, or fix your writing.
 
 Built with Next.js 14 App Router, Prisma (SQLite), NextAuth (GitHub OAuth + email/password), OpenAI gpt-4o-mini.
